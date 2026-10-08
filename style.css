@@ -37,50 +37,176 @@ h5 {
 h6 {
     color: #DBDBDB;
 }
-button{
+
+button {
     font-size: 0.8rem;
     font-weight: 700;
-    outline:none;
+    outline: none;
     border: none;
-    background-color:black;
-    color:white;
-    padding:10px 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
     cursor: pointer;
-    text-transform:uppercase;
-    transition:0.3s ease;
+    text-transform: uppercase;
+    transition: 0.3s ease;
 
 }
-button:hover{
-    background-color:gray;
+
+button:hover {
+    background-color: gray;
 }
 
 .navbar {
     font-size: 16px;
+
 }
 
 .navbar-light .navbar-nav .nav-link {
-    padding:0 20px;
+    padding: 0 20px;
     color: black;
     transition: 0.3s ease;
 }
+
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar i:hover,
 .navbar-light .navbar-nav .nav-link.active,
-.navbar i.active{
-    color:coral;
+.navbar i.active {
+    color: coral;
 }
-.navbar i{
-    font-size:1.2rem;
+
+.navbar i {
+    font-size: 1.2rem;
     padding: 0 5px;
     cursor: pointer;
     transition: 0.3s ease;
 }
-#home{
-    background-image: url("img/back.jpg");
-    width:100%;
-    height:100vh;
-    color:black;
+
+#bar {
+    font-size: 1.4rem;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: black;
 }
-#home span{
-    color:coral;
+
+#bar:hover,
+#bar.active {
+    color: white;
+}
+
+@media only screen and (max-width:991px) {
+
+    body>nav>div>button:hover,
+    body>nav>div>button:focus {
+        background-color: coral;
+    }
+
+    /* body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar{
+        background-color:white;
+    } */
+    #navbarSupportedContent>ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #navbarSupportedContent>ul>li:nth-child(n)>a {
+        padding: 10px 0;
+    }
+
+}
+
+/* mobile nav */
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+#home {
+    background-image: url("img/back.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: top 60px center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home span {
+    color: coral;
+}
+
+#home h1 {
+    color: white;
+}
+
+#home p {
+    color: white;
+}
+
+#new .one img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    
+}
+
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 3;
+    transition: 0.3s ease;
+    
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178, 178, 0.7);
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight:500;
+    color: #2a2a2a;
+    background: none;
+    border-bottom:1px solid #2a2a2a;
+    padding: 2.5px;
+    transform:translate(70px) ;
+    transition: 0.3s ease;
+    
+}
+#new .one .details button:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align:start;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    text-align:right;
+    margin-right:10px;
 }
