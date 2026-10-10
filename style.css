@@ -291,3 +291,32 @@ hr {
     position: relative;
 
 }
+
+footer{
+    background-color:#222222;
+}
+footer{
+    color:#DBDBDB;
+    font-weight:600;
+    font-size: 1rem;
+}
+footer li{
+    padding-bottom:3px;
+}
+
+footer li a{
+    font-size:0.5rem;
+    color: #999;
+}
+footer li a:hover{
+    color:coral;
+}
+
+footer p{
+    color: #999;
+    font-size:0.8rem;
+}
+
+footer .copyright a{
+    color:black;
+}
