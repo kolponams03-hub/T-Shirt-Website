@@ -358,3 +358,13 @@ footer .copyright a:hover{
 #blog-container .post:hover h3{
     color: rgb(206, 94, 54);
 }
+
+/* card */
+#card-container table{
+    border-collapse:collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+#card-container table thead{
+    font-weight: 700;
+}
